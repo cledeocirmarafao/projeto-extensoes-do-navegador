@@ -1,0 +1,23 @@
+:root {
+  --dark-gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
+  --light-gradient: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+
+  --red-strong: hsl(3, 77%, 44%);
+  --red-medium: hsl(3, 71%, 56%);
+  --red-weak: hsl(3, 86%, 64%);
+
+  --primary-light-color: hsl(227, 75%, 14%);
+  --secondary-light-color: hsl(226, 25%, 17%);
+  --neutral-light: hsl(225, 23%, 24%);
+  --very-neutral-dark: hsl(226, 11%, 37%);
+  --primary-dark: hsl(0, 0%, 78%);
+  --secondary-dark: hsl(217, 61%, 90%);
+  --very-neutral: hsl(0, 0%, 93%);
+  --neutral-dark: hsl(200, 60%, 99%);
+
+  --default-size: 1.6rem;
+
+  --large-weight: 700;
+  --medium-weight: 500;
+  --small-weight: 400;
+}
