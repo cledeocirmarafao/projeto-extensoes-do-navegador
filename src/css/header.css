@@ -21,7 +21,7 @@
   justify-content: space-between;
   padding: 1.5rem;
   margin: 2rem 0;
-  background-color: var(--neutral-light);
+  background-color: var(--secondary-light-color);
   border-radius: 2rem;
 }
 
@@ -32,8 +32,6 @@
   border-style: none;
   display: flex;
 }
-
-
 
 .container-header .header .navegation {
   display: flex;
