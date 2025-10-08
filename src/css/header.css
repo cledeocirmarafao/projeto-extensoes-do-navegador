@@ -26,11 +26,15 @@
 }
 
 .container-header .header .head button {
-  background-color: var(--very-neutral-dark);
+  background-color: var(--neutral-light);
   padding: 1rem;
   border-radius: 25%;
   border-style: none;
   display: flex;
+}
+
+.container-header .header .head button:hover{
+  background-color: var(--very-neutral-dark);
 }
 
 .container-header .header .navegation {
@@ -52,4 +56,13 @@
   color: var(--primary-dark);
   border: transparent;
   background-color: var(--neutral-light);
+}
+
+.container-header .header .navegation .navegation-bar ul li .hover-all:hover{
+  background-color:  var(--red-medium);
+  color: var(--primary-light-color);
+}
+
+.container-header .header .navegation .navegation-bar ul li .hover:hover{
+  background-color: var(--very-neutral-dark);
 }
