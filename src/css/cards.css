@@ -1,0 +1,89 @@
+.container-cards {
+  display: grid;
+  width: 90%;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+  padding-top: 2rem; 
+}
+.container-cards .card {
+  background-color: var(--secondary-light-color);
+  border-radius: 1rem;
+  padding: 0 1.5rem;
+  width: 100%;
+  border: 0.1rem solid var(--very-neutral-dark);
+}
+
+.container-cards .card .extensions{
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 3rem;
+}
+
+.container-cards .card .extensions .extensions-info h2{
+    color: var(--very-neutral);
+    padding-top: 2rem;
+}
+
+.container-cards .card .extensions .extensions-info p{
+    color: var(--primary-dark);
+    padding-top: 0.5rem;
+}
+
+.container-cards .card .extensions-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.container-cards .card .extensions-buttons .remove{
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    background-color: var(--secondary-light-color);
+    border: 0.1rem solid var(--very-neutral-dark);
+    border-radius: 25rem;
+    font-weight: var(--medium-weight);
+    color: var(--very-neutral);
+}
+
+.container-cards .card .extensions-buttons .switch {
+  position: relative;
+  width: 5rem;
+  height: 2.5rem;
+}
+
+.container-cards .card .extensions-buttons .switch input {
+  width: 0;
+  height: 0;
+}
+
+.container-cards .card .extensions-buttons .switch input:checked + .slider {
+  background-color: var(--red-weak);
+}
+
+.container-cards .card .extensions-buttons .switch input:checked + .slider::before {
+  transform: translateX(2.4rem);
+}
+
+.container-cards .card .extensions-buttons .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--very-neutral-dark);
+  transition: 0.4s;
+  border-radius: 3.4rem;
+}
+
+.container-cards .card .extensions-buttons .switch .slider::before { 
+  position: absolute;
+  content: "";
+  height: 1.8rem;
+  width: 1.8rem;
+  left: 0.4rem;
+  bottom: 0.35rem;
+  background-color: var(--very-neutral);
+  transition: 0.4s;
+  border-radius: 50%;
+}
