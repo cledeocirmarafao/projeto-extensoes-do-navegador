@@ -5,7 +5,7 @@
   align-items: center;
   flex-direction: column;
   margin: 1rem;
-  height: 100vh;
+  height: 200vh;
 }
 
 .container-header .header {
@@ -58,11 +58,7 @@
   background-color: var(--neutral-light);
 }
 
-.container-header .header .navegation .navegation-bar ul li .hover-all:hover{
+.container-header .header .navegation .navegation-bar ul li button:hover{
   background-color:  var(--red-medium);
   color: var(--primary-light-color);
-}
-
-.container-header .header .navegation .navegation-bar ul li .hover:hover{
-  background-color: var(--very-neutral-dark);
 }
