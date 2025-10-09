@@ -1,12 +1,13 @@
 .container-cards {
   display: grid;
   width: 90%;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 2rem;
-  padding-top: 2rem; 
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 2rem;
+  padding-top: 2rem;
+  margin: 1rem;
 }
 .container-cards .card {
-  background-color: var(--secondary-light-color);
+  background: var(--secondary-light-color);
   border-radius: 1rem;
   padding: 0 1.5rem;
   width: 100%;
@@ -45,6 +46,16 @@
     color: var(--very-neutral);
 }
 
+.container-cards .card .extensions-buttons .remove:hover{
+  background-color: var(--red-medium);
+  color: var(--primary-light-color);
+  border: transparent;
+}
+
+.container-cards .card .extensions-buttons .remove:focus{
+  border: none;
+}
+
 .container-cards .card .extensions-buttons .switch {
   position: relative;
   width: 5rem;
@@ -60,8 +71,17 @@
   background-color: var(--red-weak);
 }
 
+.container-cards .card .extensions-buttons .switch input:checked + .slider:hover{
+  background-color: var(--red-medium);
+}
+
 .container-cards .card .extensions-buttons .switch input:checked + .slider::before {
   transform: translateX(2.4rem);
+}
+
+.container-cards .card .extensions-buttons .switch input:checked:focus + .slider {
+  border: 0.1rem solid var(--primary-light-color);
+  box-shadow: 0 0 0 0.25rem var(--red-weak);
 }
 
 .container-cards .card .extensions-buttons .switch .slider {
