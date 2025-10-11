@@ -19,7 +19,7 @@ const screen = {
             <button class="remove" id="btn">Remove</button>
 
             <label class="switch">
-              <input id="input" type="checkbox" />
+              <input class="input" type="checkbox" />
               <span class="slider"></span>
             </label>
           </div>
