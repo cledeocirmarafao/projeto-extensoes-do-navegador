@@ -19,7 +19,6 @@
   </head>
   <body>
     <section class="container-header">
-
       <header class="header">
         <div class="head">
           <img src="./src/assets/images/logo.svg" alt="logo" />
@@ -35,24 +34,17 @@
           <h1>Extensions List</h1>
           <div class="navegation-bar">
             <ul>
-              <li>
-                <button>All</button>
-              </li>
-              <li>
-                <button>Active</button>
-              </li>
-              <li>
-                <button>Inactive</button>
-              </li>
+              <li><button id="filter-all">All</button></li>
+              <li><button id="filter-active">Active</button></li>
+              <li><button id="filter-inactive">Inactive</button></li>
             </ul>
           </div>
         </nav>
       </header>
 
       <section class="container-cards"></section>
-      <section class="container-active"></section>
-      <section class="container-inactive"></section>
-
+      <section class="container-cards active" id="active"></section>
+      <section class="container-cards inactive" id="inactive"></section>
     </section>
     <script type="module" src="./src/javascript/index.js"></script>
   </body>
