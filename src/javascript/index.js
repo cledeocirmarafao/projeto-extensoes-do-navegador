@@ -1,47 +1,19 @@
+import { screen } from "./objects/screen.js";
+
 async function dataInfo() {
   const response = await fetch("./data.json");
   return await response.json();
 }
 dataInfo();
 
-const screen = {
-  dataItens: document.querySelector(".container-cards"),
-  createCardHtml(cardData) {
-    return `
-            <div class="card">
-          <div class="extensions">
-            <img
-              src="${cardData.logo}"
-              alt="imagem de representação da extensão"
-            />
-            <div class="extensions-info">
-              <h2>${cardData.name}</h2>
-              <p>
-                ${cardData.description}
-              </p>
-            </div>
-          </div>
-          <div class="extensions-buttons">
-            <button class="remove">Remove</button>
+document.querySelector(".container-cards").addEventListener('click', (e) => {
+  if (e.target.classList.contains('remove')) {
+    console.log('Botão clicado!');
 
-            <label class="switch">
-              <input type="checkbox" />
-              <span class="slider"></span>
-            </label>
-          </div>
-        </div>
-        `;
-  },
-
-  renderScreen(info) {
-    const cardsHTMLArray = info.map((cardData) =>
-      this.createCardHtml(cardData)
-    );
-    const finalHTML = cardsHTMLArray.join("");
-    this.dataItens.innerHTML = finalHTML;
-  },
-};
-
+    e.target.closest('.card').remove();
+  }
+});
+  
 async function init() {
   try {
     const info = await dataInfo();
@@ -51,4 +23,4 @@ async function init() {
     console.error("Erro ao carregar ou renderizar os dados:", error);
   }
 }
-init();
+init()
