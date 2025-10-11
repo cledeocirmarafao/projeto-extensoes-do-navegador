@@ -4,23 +4,38 @@ async function dataInfo() {
   const response = await fetch("./data.json");
   return await response.json();
 }
-dataInfo();
 
 document.querySelector(".container-cards").addEventListener('click', (e) => {
   if (e.target.classList.contains('remove')) {
-    console.log('Botão clicado!');
-
-    e.target.closest('.card').remove();
+      e.target.closest('.card').remove();
   }
 });
-  
+
 async function init() {
   try {
     const info = await dataInfo();
 
     screen.renderScreen(info);
+    toggleEvents()
+    filterButtons()
   } catch (error) {
     console.error("Erro ao carregar ou renderizar os dados:", error);
   }
 }
 init()
+
+function toggleEvents() {
+  const inputs = document.querySelectorAll('.input')
+
+  inputs.forEach((input) => {
+    input.addEventListener('change', (e) => {
+      const card = e.target.closest('.card')
+
+      if (e.target.checked) {
+        card.classList.add('active')
+      } else {
+        card.classList.remove('active')
+      }
+    })
+  })
+}
