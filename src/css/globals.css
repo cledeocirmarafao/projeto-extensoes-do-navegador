@@ -19,3 +19,7 @@ button:focus {
   outline: 0.2rem solid var(--red-medium);
   border: 0.1rem solid var;
 }
+
+.card.hidden{
+  display: none;
+}
