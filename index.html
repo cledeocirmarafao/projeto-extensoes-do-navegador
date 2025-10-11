@@ -1,41 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" s="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/globals.css">
-    <link rel="stylesheet" href="./src/css/variables.css">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="stylesheet" href="./src/css/responsive.css">
+    <link
+      rel="shortcut icon"
+      href="./src/assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/globals.css" />
+    <link rel="stylesheet" href="./src/css/variables.css" />
+    <link rel="stylesheet" href="./src/css/header.css" />
+    <link rel="stylesheet" href="./src/css/cards.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css" />
     <title>Extensões do Navegador</title>
-</head>
-<body>
-    <section class="container">
-        <header class="header">
-            <div class="head">
-                <img src="./src/assets/images/logo.svg" alt="logo">
-                <button></button>
-            </div>
+  </head>
+  <body>
+    <section class="container-header">
 
-            <nav class="navegation">
-                <h1>Extensions List</h1>
-                <div class="navegation-bar">
-                    <ul>
-                        <li>
-                            <button>All</button>
-                        </li>
-                        <li>
-                            <button>Active</button>
-                        </li>
-                        <li>
-                            <button>Inactive</button>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+      <header class="header">
+        <div class="head">
+          <img src="./src/assets/images/logo.svg" alt="logo" />
+          <button>
+            <img
+              src="./src/assets/images/icon-sun.svg"
+              alt="botão do modo dark / light"
+            />
+          </button>
+        </div>
+
+        <nav class="navegation">
+          <h1>Extensions List</h1>
+          <div class="navegation-bar">
+            <ul>
+              <li>
+                <button>All</button>
+              </li>
+              <li>
+                <button>Active</button>
+              </li>
+              <li>
+                <button>Inactive</button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <section class="container-cards"></section>
+      <section class="container-active"></section>
+      <section class="container-inactive"></section>
+
     </section>
-</body>
+    <script type="module" src="./src/javascript/index.js"></script>
+  </body>
 </html>
