@@ -39,3 +39,35 @@ function toggleEvents() {
     })
   })
 }
+
+async function filterButtons() {
+  const btnAll = document.getElementById('filter-all')
+  const btnActive = document.getElementById('filter-active')
+  const btnInactive =document.getElementById('filter-inactive')
+  
+  const cards = document.querySelectorAll('.card')
+
+  btnAll.addEventListener('click', () => {
+    cards.forEach((card) => {card.classList.remove('hidden')})
+  })
+
+  btnActive.addEventListener('click', () => {
+    cards.forEach((card) => {
+      if (card.classList.contains('active')) {
+        card.classList.remove('hidden')
+      } else {
+        card.classList.add('hidden')
+      }
+    })
+  })
+
+  btnInactive.addEventListener('click', () => {
+    cards.forEach((card) => {
+      if (!card.classList.contains('active')) {
+        card.classList.remove('hidden')
+      } else {
+        card.classList.add('hidden')
+      }
+    })
+  })
+}
