@@ -40,7 +40,7 @@ function toggleEvents() {
   })
 }
 
-async function filterButtons() {
+function filterButtons() {
   const btnAll = document.getElementById('filter-all')
   const btnActive = document.getElementById('filter-active')
   const btnInactive =document.getElementById('filter-inactive')
