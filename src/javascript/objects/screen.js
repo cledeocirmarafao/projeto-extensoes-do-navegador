@@ -72,7 +72,7 @@ const screen = {
           this.saveActiveCard(extensionName);
           this.moveToActive(card);
         } else {
-          this.removeActiveCard(extensionName);
+          this.removeActiveCards(extensionName);
           this.moveToInactive(card);
         }
       });
