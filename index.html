@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./src/css/variables.css" />
     <link rel="stylesheet" href="./src/css/header.css" />
     <link rel="stylesheet" href="./src/css/cards.css" />
+    <link rel="stylesheet" href="./src/css/hamburguer.css" />
     <link rel="stylesheet" href="./src/css/responsive.css" />
     <title>Extensões do Navegador</title>
   </head>
@@ -32,7 +33,17 @@
 
         <nav class="navegation">
           <h1>Extensions List</h1>
+         
           <div class="navegation-bar">
+
+            <input id="menu-hamburguer" type="checkbox">
+
+            <label for="menu-hamburguer">
+              <div class="menu">
+                <span class="hamburguer"></span>
+              </div>
+            </label>
+
             <ul>
               <li><button id="filter-all">All</button></li>
               <li><button id="filter-active">Active</button></li>
