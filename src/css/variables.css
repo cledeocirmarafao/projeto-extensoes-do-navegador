@@ -14,10 +14,93 @@
   --secondary-dark: hsl(217, 61%, 90%);
   --very-neutral: hsl(0, 0%, 93%);
   --neutral-dark: hsl(200, 60%, 99%);
+  --shadow: hsl(240, 2%, 88%);
 
   --default-size: 1.6rem;
 
   --large-weight: 700;
   --medium-weight: 500;
   --small-weight: 400;
+}
+
+:root .light {
+  background: var(--light-gradient);
+  background-attachment: fixed;
+  --secondary-light-color: hsl(200, 60%, 99%);
+  --neutral-light: hsl(0, 0%, 78%);
+  --neutral-dark: hsl(227, 75%, 14%);
+  --primary-dark: hsl(226, 11%, 37%);
+  --very-neutral-dark: hsl(0, 0%, 78%);
+
+  .container-header .header .head {
+    border: 0.1rem solid var(--neutral-light);
+    box-shadow: 0 1px 1px 1px var(--shadow);
+    background: url(../assets/images/logo-light.svg) center left 2rem no-repeat var(--secondary-light-color);
+  }
+
+  .container-header .header .head button {
+    background: url(../assets/images/icon-moon.svg) center center no-repeat
+      var(--secondary-dark);
+      transition: 0.5s ease-in-out;
+  }
+
+  .container-header .header .head button:hover {
+    background-color: var(--neutral-light);
+  }
+
+  .container-header .header .navegation .navegation-bar ul li button:hover {
+    background-color: var(--red-medium);
+    color: var(--secondary-light-color);
+  }
+
+  .container-cards .card .extensions-buttons .switch input:checked + .slider {
+    background-color: var(--red-strong);
+  }
+
+  .container-cards .card .extensions-buttons .remove:hover {
+    background-color: var(--red-strong);
+    color: var(--secondary-light-color);
+  }
+
+  .container-cards
+    .card
+    .extensions-buttons
+    .switch
+    input:checked
+    + .slider:hover {
+    background-color: var(--red-medium);
+  }
+
+  .container-cards
+    .card
+    .extensions-buttons
+    .switch
+    input:checked:focus
+    + .slider {
+    border: 0.15rem solid var(--neutral-light);
+  }
+
+  .container-cards .card .extensions-buttons .remove:focus {
+    border: 0.1rem solid var(--red-strong);
+  }
+  .container-header .header .navegation .navegation-bar ul li button{
+    color: var(--primary-light-color);
+    background-color: var(--neutral-light);
+  }
+
+  .container-header .header .navegation .navegation-bar ul li button:hover{
+    background-color: var(--secondary-light-color);
+    color: var(--primary-light-color);
+  }
+
+  @media(max-width: 768px){
+    .container-header .header .navegation .navegation-bar ul{
+      background-color: var(--primary-light-color);
+    }
+
+    .container-header .header .navegation .navegation-bar ul li button:hover{
+      background-color: var(--primary-light-color);
+      color: var(--neutral-light);
+    }
+  }
 }
