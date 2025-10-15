@@ -24,9 +24,8 @@
 
   .container-header .header .navegation .navegation-bar ul {
     border-radius: 1rem;
-    background-color: var(--very-neutral);
+    background-color: var(--primary-light-color);
     opacity: 0.9;
-   
   }
 
   .container-header .header .navegation .navegation-bar ul li{
@@ -34,15 +33,15 @@
   }
 
   .container-header .header .navegation .navegation-bar ul li button {
-     color: var(--primary-light-color);
+     color: var(--neutral-dark);
+     border-color: transparent;
      border-radius: 1rem;
      background: transparent;
   }
 
   .container-header .header .navegation .navegation-bar ul li button:hover{
-    border-radius: 1rem;
-    background-color: var(--primary-light-color);
-    color: var(--very-neutral);
+    background-color: var(--neutral-dark);
+    color: var(--primary-light-color);
   }
 
   button:focus{
