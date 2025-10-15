@@ -18,6 +18,7 @@ async function init() {
     screen.renderScreen(info);
     toggleEvents()
     filterButtons()
+    toggleDarkLight()
   } catch (error) {
     console.error("Erro ao carregar ou renderizar os dados:", error);
   }
@@ -71,3 +72,15 @@ function filterButtons() {
     })
   })
 }
+
+function toggleDarkLight() {
+  const toggleMode = document.getElementById('dark-light')
+  toggleMode.addEventListener('click', () => {
+    const lightMode = document.getElementById('light')
+    lightMode.classList.toggle('light')
+    
+    toggleMode.classList.toggle('light-toggle')
+
+  })
+}
+
