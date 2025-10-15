@@ -21,16 +21,17 @@
   justify-content: space-between;
   padding: 1.5rem;
   margin: 2rem 0;
-  background-color: var(--secondary-light-color);
+  background: url(../assets/images/logo.svg) center left 2rem no-repeat var(--secondary-light-color);
   border-radius: 2rem;
+  box-shadow: 0 0.1rem 0.1rem 0.1rem var(--secondary-light-color);
 }
 
 .container-header .header .head button {
-  background-color: var(--neutral-light);
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 25%;
   border-style: none;
   display: flex;
+  background: url(../assets/images/icon-sun.svg) center center no-repeat var(--neutral-light);
 }
 
 .container-header .header .head button:hover{
@@ -46,6 +47,7 @@
 .container-header .header .navegation .navegation-bar ul {
   display: flex;
   gap: 1rem;
+    transition: 0.5s ease-in-out;
 }
 
 .container-header .header .navegation .navegation-bar ul li button {
@@ -53,12 +55,13 @@
   border-radius: 2.5rem;
   font-size: 2rem;
   font-weight: var(--small-weight);
-  color: var(--primary-dark);
-  border: transparent;
-  background-color: var(--neutral-light);
+  color: var(--neutral-dark);
+  border: 0.1rem solid var(--neutral-light);
+  background-color: var(--secondary-light-color);
 }
 
 .container-header .header .navegation .navegation-bar ul li button:hover{
   background-color:  var(--red-medium);
   color: var(--primary-light-color);
 }
+
