@@ -80,30 +80,30 @@ const screen = {
   },
 
   saveActiveCard(extensionName) {
-    let activesCards = JSON.parse(localStorage.getItem('activesCards')) || []
+    let activesCards = JSON.parse(localStorage.getItem("activesCards")) || [];
 
     if (!activesCards.includes(extensionName)) {
-      activesCards.push(extensionName)
+      activesCards.push(extensionName);
 
-      localStorage.setItem('activesCards', JSON.stringify(activesCards))
+      localStorage.setItem("activesCards", JSON.stringify(activesCards));
     }
   },
 
   removeActiveCards(extensionName) {
-    let activesCards = JSON.parse(localStorage.getItem('activesCards')) || []
+    let activesCards = JSON.parse(localStorage.getItem("activesCards")) || [];
 
-    activesCards = activesCards.filter(name => name !== extensionName)
+    activesCards = activesCards.filter((name) => name !== extensionName);
 
-    localStorage.setItem('activesCards', JSON.stringify(activesCards))
+    localStorage.setItem("activesCards", JSON.stringify(activesCards));
   },
 
   moveToActive(card) {
-    card.classList.add('active')
+    card.classList.add("active");
   },
 
   moveToInactive(card) {
-    card.classList.remove('active')
-  }
+    card.classList.remove("active");
+  },
 };
 
 export { screen };

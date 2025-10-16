@@ -14,45 +14,45 @@
   border: 0.1rem solid var(--very-neutral-dark);
 }
 
-.container-cards .card .extensions{
-    display: flex;
-    gap: 1rem;
-    padding-bottom: 3rem;
+.container-cards .card .extensions {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 3rem;
 }
 
-.container-cards .card .extensions .extensions-info h2{
-    color: var(--neutral-dark);
-    padding-top: 2rem;
+.container-cards .card .extensions .extensions-info h2 {
+  color: var(--neutral-dark);
+  padding-top: 2rem;
 }
 
-.container-cards .card .extensions .extensions-info p{
-    color: var(--primary-dark);
-    padding-top: 0.5rem;
+.container-cards .card .extensions .extensions-info p {
+  color: var(--primary-dark);
+  padding-top: 0.5rem;
 }
 
-.container-cards .card .extensions-buttons{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
+.container-cards .card .extensions-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
-.container-cards .card .extensions-buttons .remove{
-    font-size: 1.5rem;
-    padding: 0.8rem;
-    background-color: var(--secondary-light-color);
-    border: 0.1rem solid var(--very-neutral-dark);
-    border-radius: 25rem;
-    font-weight: var(--medium-weight);
-    color: var(--neutral-dark);
+.container-cards .card .extensions-buttons .remove {
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  background-color: var(--secondary-light-color);
+  border: 0.1rem solid var(--very-neutral-dark);
+  border-radius: 25rem;
+  font-weight: var(--medium-weight);
+  color: var(--neutral-dark);
 }
 
-.container-cards .card .extensions-buttons .remove:hover{
+.container-cards .card .extensions-buttons .remove:hover {
   background-color: var(--red-medium);
   color: var(--primary-light-color);
   border: transparent;
 }
 
-.container-cards .card .extensions-buttons .remove:focus{
+.container-cards .card .extensions-buttons .remove:focus {
   border: none;
 }
 
@@ -71,15 +71,30 @@
   background-color: var(--red-weak);
 }
 
-.container-cards .card .extensions-buttons .switch input:checked + .slider:hover{
+.container-cards
+  .card
+  .extensions-buttons
+  .switch
+  input:checked
+  + .slider:hover {
   background-color: var(--red-medium);
 }
 
-.container-cards .card .extensions-buttons .switch input:checked + .slider::before {
+.container-cards
+  .card
+  .extensions-buttons
+  .switch
+  input:checked
+  + .slider::before {
   transform: translateX(2.4rem);
 }
 
-.container-cards .card .extensions-buttons .switch input:checked:focus + .slider {
+.container-cards
+  .card
+  .extensions-buttons
+  .switch
+  input:checked:focus
+  + .slider {
   border: 0.1rem solid var(--primary-light-color);
   box-shadow: 0 0 0 0.25rem var(--red-medium);
 }
@@ -96,7 +111,7 @@
   border-radius: 3.4rem;
 }
 
-.container-cards .card .extensions-buttons .switch .slider::before { 
+.container-cards .card .extensions-buttons .switch .slider::before {
   position: absolute;
   content: "";
   height: 1.8rem;

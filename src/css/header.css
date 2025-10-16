@@ -21,7 +21,8 @@
   justify-content: space-between;
   padding: 1.5rem;
   margin: 2rem 0;
-  background: url(../assets/images/logo.svg) center left 2rem no-repeat var(--secondary-light-color);
+  background: url(../assets/images/logo.svg) center left 2rem no-repeat
+    var(--secondary-light-color);
   border-radius: 2rem;
   box-shadow: 0 0.1rem 0.1rem 0.1rem var(--secondary-light-color);
 }
@@ -31,10 +32,11 @@
   border-radius: 25%;
   border-style: none;
   display: flex;
-  background: url(../assets/images/icon-sun.svg) center center no-repeat var(--neutral-light);
+  background: url(../assets/images/icon-sun.svg) center center no-repeat
+    var(--neutral-light);
 }
 
-.container-header .header .head button:hover{
+.container-header .header .head button:hover {
   background-color: var(--very-neutral-dark);
 }
 
@@ -47,7 +49,7 @@
 .container-header .header .navegation .navegation-bar ul {
   display: flex;
   gap: 1rem;
-    transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .container-header .header .navegation .navegation-bar ul li button {
@@ -60,8 +62,7 @@
   background-color: var(--secondary-light-color);
 }
 
-.container-header .header .navegation .navegation-bar ul li button:hover{
-  background-color:  var(--red-medium);
+.container-header .header .navegation .navegation-bar ul li button:hover {
+  background-color: var(--red-medium);
   color: var(--primary-light-color);
 }
-

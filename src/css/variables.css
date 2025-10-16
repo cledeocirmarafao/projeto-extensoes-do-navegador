@@ -35,13 +35,14 @@
   .container-header .header .head {
     border: 0.1rem solid var(--neutral-light);
     box-shadow: 0 1px 1px 1px var(--shadow);
-    background: url(../assets/images/logo-light.svg) center left 2rem no-repeat var(--secondary-light-color);
+    background: url(../assets/images/logo-light.svg) center left 2rem no-repeat
+      var(--secondary-light-color);
   }
 
   .container-header .header .head button {
     background: url(../assets/images/icon-moon.svg) center center no-repeat
       var(--secondary-dark);
-      transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
 
   .container-header .header .head button:hover {
@@ -83,22 +84,22 @@
   .container-cards .card .extensions-buttons .remove:focus {
     border: 0.1rem solid var(--red-strong);
   }
-  .container-header .header .navegation .navegation-bar ul li button{
+  .container-header .header .navegation .navegation-bar ul li button {
     color: var(--primary-light-color);
     background-color: var(--neutral-light);
   }
 
-  .container-header .header .navegation .navegation-bar ul li button:hover{
+  .container-header .header .navegation .navegation-bar ul li button:hover {
     background-color: var(--secondary-light-color);
     color: var(--primary-light-color);
   }
 
-  @media(max-width: 768px){
-    .container-header .header .navegation .navegation-bar ul{
+  @media (max-width: 768px) {
+    .container-header .header .navegation .navegation-bar ul {
       background-color: var(--primary-light-color);
     }
 
-    .container-header .header .navegation .navegation-bar ul li button:hover{
+    .container-header .header .navegation .navegation-bar ul li button:hover {
       background-color: var(--primary-light-color);
       color: var(--neutral-light);
     }

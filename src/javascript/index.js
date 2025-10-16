@@ -5,9 +5,9 @@ async function dataInfo() {
   return await response.json();
 }
 
-document.querySelector(".container-cards").addEventListener('click', (e) => {
-  if (e.target.classList.contains('remove')) {
-      e.target.closest('.card').remove();
+document.querySelector(".container-cards").addEventListener("click", (e) => {
+  if (e.target.classList.contains("remove")) {
+    e.target.closest(".card").remove();
   }
 });
 
@@ -16,71 +16,71 @@ async function init() {
     const info = await dataInfo();
 
     screen.renderScreen(info);
-    toggleEvents()
-    filterButtons()
-    toggleDarkLight()
+    toggleEvents();
+    filterButtons();
+    toggleDarkLight();
   } catch (error) {
     console.error("Erro ao carregar ou renderizar os dados:", error);
   }
 }
-init()
+init();
 
 function toggleEvents() {
-  const inputs = document.querySelectorAll('.input')
+  const inputs = document.querySelectorAll(".input");
 
   inputs.forEach((input) => {
-    input.addEventListener('change', (e) => {
-      const card = e.target.closest('.card')
+    input.addEventListener("change", (e) => {
+      const card = e.target.closest(".card");
 
       if (e.target.checked) {
-        card.classList.add('active')
+        card.classList.add("active");
       } else {
-        card.classList.remove('active')
+        card.classList.remove("active");
       }
-    })
-  })
+    });
+  });
 }
 
 function filterButtons() {
-  const btnAll = document.getElementById('filter-all')
-  const btnActive = document.getElementById('filter-active')
-  const btnInactive =document.getElementById('filter-inactive')
-  
-  const cards = document.querySelectorAll('.card')
+  const btnAll = document.getElementById("filter-all");
+  const btnActive = document.getElementById("filter-active");
+  const btnInactive = document.getElementById("filter-inactive");
 
-  btnAll.addEventListener('click', () => {
-    cards.forEach((card) => {card.classList.remove('hidden')})
-  })
+  const cards = document.querySelectorAll(".card");
 
-  btnActive.addEventListener('click', () => {
+  btnAll.addEventListener("click", () => {
     cards.forEach((card) => {
-      if (card.classList.contains('active')) {
-        card.classList.remove('hidden')
-      } else {
-        card.classList.add('hidden')
-      }
-    })
-  })
+      card.classList.remove("hidden");
+    });
+  });
 
-  btnInactive.addEventListener('click', () => {
+  btnActive.addEventListener("click", () => {
     cards.forEach((card) => {
-      if (!card.classList.contains('active')) {
-        card.classList.remove('hidden')
+      if (card.classList.contains("active")) {
+        card.classList.remove("hidden");
       } else {
-        card.classList.add('hidden')
+        card.classList.add("hidden");
       }
-    })
-  })
+    });
+  });
+
+  btnInactive.addEventListener("click", () => {
+    cards.forEach((card) => {
+      if (!card.classList.contains("active")) {
+        card.classList.remove("hidden");
+      } else {
+        card.classList.add("hidden");
+      }
+    });
+  });
 }
 
 function toggleDarkLight() {
-  const toggleMode = document.getElementById('dark-light')
-  toggleMode.addEventListener('click', () => {
-    const lightMode = document.getElementById('light')
-    lightMode.classList.toggle('light')
-    
-    toggleMode.classList.toggle('light-toggle')
+  const toggleMode = document.getElementById("dark-light");
+  toggleMode.addEventListener("click", () => {
+    const lightMode = document.getElementById("light");
+    lightMode.classList.toggle("light");
 
-  })
+    toggleMode.classList.toggle("light-toggle");
+  });
 }
-

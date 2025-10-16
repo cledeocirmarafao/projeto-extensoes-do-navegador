@@ -28,26 +28,26 @@
     opacity: 0.9;
   }
 
-  .container-header .header .navegation .navegation-bar ul li{
+  .container-header .header .navegation .navegation-bar ul li {
     padding: 0.5rem;
   }
 
   .container-header .header .navegation .navegation-bar ul li button {
-     color: var(--neutral-dark);
-     border-color: transparent;
-     border-radius: 1rem;
-     background: transparent;
+    color: var(--neutral-dark);
+    border-color: transparent;
+    border-radius: 1rem;
+    background: transparent;
   }
 
-  .container-header .header .navegation .navegation-bar ul li button:hover{
+  .container-header .header .navegation .navegation-bar ul li button:hover {
     background-color: var(--neutral-dark);
     color: var(--primary-light-color);
   }
 
-  button:focus{
-     outline: 0.2rem solid var(--primary-light-color);
-  border: 0.1rem solid var;
-  border-radius: 1rem;
+  button:focus {
+    outline: 0.2rem solid var(--primary-light-color);
+    border: 0.1rem solid var;
+    border-radius: 1rem;
   }
 }
 
