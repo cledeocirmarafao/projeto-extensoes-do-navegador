@@ -45,7 +45,7 @@
   }
 
   button:focus {
-    outline: 0.2rem solid var(--primary-light-color);
+    outline: 0.2rem solid var(--red-medium);
     border: 0.1rem solid var;
     border-radius: 1rem;
   }

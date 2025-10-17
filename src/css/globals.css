@@ -17,7 +17,7 @@ button:hover {
 
 button:focus {
   outline: 0.2rem solid var(--red-medium);
-  border: 0.1rem solid var;
+  border: 0.1rem solid var(--red-medium);
 }
 
 .card.hidden {
